@@ -1,0 +1,228 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: bisque;
+  height: 100vh;
+}
+
+
+/* header start*/
+
+header {
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(109, 37, 177);
+  padding: 0.4rem 0;
+  text-align: center;
+  /* z-index: 1; */
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-bottom: rgb(191, 65, 15) 4px solid;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: bisque;
+}
+
+
+.grid {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: black;
+  text-wrap: nowrap;
+  border-right: 0.3rem solid rgb(109, 37, 177);  
+  border-left: 0.3rem solid rgb(109, 37, 177);  
+  border-bottom: 0.3rem solid rgb(109, 37, 177);  
+}
+
+ul {
+  width: inherit;  
+  align-content: center; 
+}
+
+.grid ul li a {
+  color: black;
+}
+
+li {
+  display: grid;
+  list-style: none;
+  background-color: rgb(233, 230, 227);
+  align-items: center;
+  justify-items: center;
+  padding: 0.42rem 0;
+}
+
+.head {
+  border-right: 0.2rem solid rgb(109, 37, 177);
+}
+
+li a {
+  display: inherit;
+  color: white;
+  width: 100%;
+  height: 100%;
+
+  padding: 0.8rem;
+  /* align-content: inherit;  */
+  justify-content: center;
+}
+
+
+/* dropdown start*/
+
+ .dropnav:hover .droplink {
+  background-color: rgb(144, 62, 221);
+}
+
+#dropnav {
+  width: 100%;
+  display: inline-block;
+}
+
+.dropnav-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(233, 230, 227);
+  border: 3px solid rgb(109, 37, 177);
+  min-width: 32%;
+  max-width: 33;
+  width: 33%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropnav-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.nav-text, .choose {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-text:hover {
+  color: rgb(171, 99, 238);
+  transform: scale(1.15);
+  /* border-radius: 10%; */
+}
+
+.choose:hover , .aside-btn:hover{
+  color: rgb(171, 99, 238);
+}
+
+.dropnav:hover .dropnav-content {
+  display: block;
+} 
+
+/* dropdown end */
+
+/* header end */
+
+/* =================================== */
+
+/* main start */
+
+main {
+  width: 100%;
+  height: 77%;
+  min-height: 35.2rem;
+  /* position: fixed; */
+  background-color: rgb(233, 230, 227);
+
+} 
+
+aside {
+  width: 20%;
+  min-width: 8.6rem;
+  height: 100%;
+  float: left;
+  color: black;
+  font-size: 1.2rem;
+  font-weight:bolder;
+  border-right: 4px solid rgb(109, 37, 177);
+}
+
+.aside-btn {
+  font-size: inherit;
+  background-color: rgb(84, 28, 137);
+  font-weight: bold;
+  width: 80%;
+  margin: 2% 11%;
+  border: none;
+  padding: 0.4rem;
+  color:bisque;
+  border-radius: 10px;
+  /* text-align: right; */
+
+}
+
+section {
+  display: inline-block;
+  
+  padding: 1rem;
+  color: black;
+}
+
+section div {
+  display: block;
+}
+
+
+/* footer */
+
+footer {
+  height: 4.5rem;
+  background-color: rgb(109, 37, 177);
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: bisque;
+  border-top: 2px solid bisque;
+}
+
+.WhatsApp-logo {
+  width: 2em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* margin: 5px; */
+}
+
+.whatsApp-button {
+  margin-bottom: 5px;
+/* margin-left: 30%; */
+  border-radius: 10px;
+  width: 70px;
+  border: none;
+
+}
+
+.whatsApp-button:hover {
+  background-color: #d52349;
+}
