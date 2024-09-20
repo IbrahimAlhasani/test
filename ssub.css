@@ -1,5 +1,5 @@
 @media (min-width: 150px) and (max-width: 1500px) {
-  .title{
+.title{
   display: grid;
   justify-content: center;
 }
