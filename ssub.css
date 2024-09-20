@@ -1,4 +1,5 @@
-.title{
+@media (min-width: 210px) and (max-width: 1350px) {
+  .title{
   display: grid;
   justify-content: center;
 }
@@ -241,4 +242,5 @@ main{
   color: white;
   font-weight: bold;
   font-size: 1em;
+}
 }
